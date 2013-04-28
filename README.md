@@ -3,7 +3,7 @@ netns-vrf - a linux netns wrapper
 
 #howto
 
-* required: ruby
+* required: ruby, linux 3.0.2+
 
 * clone the repo with: git clone https://github.com/nopedial/netns-vrf
 

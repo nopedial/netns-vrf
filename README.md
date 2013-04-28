@@ -1,16 +1,16 @@
-vrf-lite - a linux netns wrapper
---------------------------------
+netns-vrf - a linux netns wrapper
+---------------------------------
 
 #howto
 
 * required: ruby
 
-* clone the repo with: git clone https://github.com/nopedial/vrf-lite
+* clone the repo with: git clone https://github.com/nopedial/netns-vrf
 
-* build the gem with: gem build vrf-lite.gemspec
+* build the gem with: gem build netns-vrf.gemspec
 
-* install the gem with: gem install ./vrf-lite-0.0.0.gem
+* install the gem with: gem install ./netns-vrf-0.0.0.gem
 
-* run with: vrf-lite
+* run with: netns-vrf
 
 

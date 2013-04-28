@@ -57,7 +57,7 @@ module VRFLite
     end
 
     def add_to_vrf
-      dev_location = `cat /proc/net/dev | grep ':' | cut -d ':' -f 1 | grep #{@if_name} | head -n 1`.chop
+      dev_location = `cat /proc/net/dev | grep ':' | cut -d ':' -f 1 | grep #{@if_name} | head -n 1`.chop # just being lazy..
       if dev_location != ''    
       		system("ip link set #{@if_name} netns #{@vrf_name}")
 		system("ip netns exec #{@vrf_name} ip link set #{@if_name} up")

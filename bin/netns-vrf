@@ -9,12 +9,12 @@ require 'netns-vrf/interface'
 def help
    puts "usage: netns-vrf [options]\n\n"
    puts "options: "
-   puts "- create [VRF_NAME]"
-   puts "- delete [VRF_NAME]"
-   puts "- show [VRF_NAME:optional]"
-   puts "- interface (push|remove) [IFACE_NAME] [VRF_NAME]"
-   puts "- ip address (inet|inet6) (add|delete) [IP_ADDRESS] [IFACE_NAME] [VRF_NAME]" 
-   puts "- ip route (inet|inet6) (add|delete) [DESTINATION_PREFIX] [NEXT_HOP] [IFACE_NAME] [VRF_NAME]\n\n"
+   puts "  - create [VRF_NAME]"
+   puts "  - delete [VRF_NAME]"
+   puts "  - show [VRF_NAME:optional]"
+   puts "  - interface (push|remove) [IFACE_NAME] [VRF_NAME]"
+   puts "  - ip address (inet|inet6) (add|delete) [IP_ADDRESS] [IFACE_NAME] [VRF_NAME]" 
+   puts "  - ip route (inet|inet6) (add|delete) [DESTINATION_PREFIX] [NEXT_HOP] [IFACE_NAME] [VRF_NAME]\n\n"
    exit 0
 end
  

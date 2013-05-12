@@ -1,7 +1,10 @@
-netns-vrf - a linux netns wrapper
----------------------------------
+netns-vrf
+=========
 
-#howto
+a linux netns wrapper
+---------------------
+
+###install
 
 * required: ruby, linux 3.0.2+
 
@@ -9,10 +12,6 @@ netns-vrf - a linux netns wrapper
 
 * build the gem with: gem build netns-vrf.gemspec
 
-* install the gem with: gem install ./netns-vrf-0.0.1.gem
+* install the gem with: gem install ./netns-vrf-0.0.2.gem
 
 * run with: netns-vrf
-
-
-
-

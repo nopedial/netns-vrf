@@ -11,6 +11,7 @@ module VRFLite
              system("ip link set #{@if_name} netns #{@vrf_name}")
              system("ip netns exec #{@vrf_name} ip link set #{@if_name} up")
              @lock = 0
+	     return @lock.to_i 
           else
              @lock = 1 # device is not in default netns #
           end

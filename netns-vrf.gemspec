@@ -8,7 +8,7 @@ Gem::Specification.new do |s|
   s.summary           = 'quick and dirty linux netns wrapper'
   s.description       = 'linux vrf-lite command line wannabe'
   s.rubyforge_project = s.name
-  s.files 	      = `ls lib/*/*`.split("\n")
+  s.files             = ["lib/netns-vrf.rb", "lib/netns-vrf/ip.rb", "lib/netns-vrf/route.rb", "lib/netns-vrf/interface.rb", "lib/netns-vrf/netns.rb"]
   s.executables       = %w( netns-vrf )
   s.require_path      = 'lib'
 

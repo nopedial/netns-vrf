@@ -8,10 +8,20 @@ a linux netns wrapper
 
 * required: ruby, linux 3.0.2+
 
-* clone the repo with: git clone https://github.com/nopedial/netns-vrf
+* clone the repo:
 
-* build the gem with: gem build netns-vrf.gemspec
+    git clone https://github.com/nopedial/netns-vrf
 
-* install the gem with: gem install ./netns-vrf-0.0.2.gem
+* build the gem: 
 
-* run with: netns-vrf
+    gem build netns-vrf.gemspec
+
+* install the gem: 
+
+    gem install ./netns-vrf-0.0.3.gem
+
+* run: 
+
+    netns-vrf
+
+

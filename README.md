@@ -17,7 +17,7 @@
 
 1. create a VRF:
 
-	root@chemdawg:~# netns-vrf show all
+	`root@chemdawg:~# netns-vrf show all
 	root@chemdawg:~# netns-vrf create public-inet
 	+ vrf created: public-inet
 	root@chemdawg:~# netns-vrf show all
@@ -30,11 +30,11 @@
        	   valid_lft forever preferred_lft forever
 	--------------------------
 	
-	root@chemdawg:~# 
+	root@chemdawg:~#`
 
 2. add interface to VRF:
 
-	root@chemdawg:~# netns-vrf interface push eth0.2333 public-inet
+	`root@chemdawg:~# netns-vrf interface push eth0.2333 public-inet
 	+ interface eth0.2333 correctly added to vrf: public-inet
 	root@chemdawg:~# netns-vrf show all
 	display vrf: public-inet
@@ -50,11 +50,11 @@
        	   valid_lft forever preferred_lft forever
 	--------------------------
 	
-	root@chemdawg:~# 
+	root@chemdawg:~#` 
 
 3. add ip address to VRF interface:
 
-	root@chemdawg:~# netns-vrf ip address inet add 10.23.32.2/30 eth0.2333 public-inet
+	`root@chemdawg:~# netns-vrf ip address inet add 10.23.32.2/30 eth0.2333 public-inet
 	+ IP address 10.23.32.2/30 correctly added to interface eth0.2333 : VRF public-inet
 	root@chemdawg:~# netns-vrf show all
 	display vrf: public-inet
@@ -71,11 +71,11 @@
        	   valid_lft forever preferred_lft forever
 	--------------------------	
 	
-	root@chemdawg:~#
+	root@chemdawg:~#`
 
 4. add route to VRF:
 
-	root@chemdawg:~# netns-vrf ip route inet add 10.2.2.0/24 10.23.32.1 eth0.2333 public-inet
+	`root@chemdawg:~# netns-vrf ip route inet add 10.2.2.0/24 10.23.32.1 eth0.2333 public-inet
 	+ route to 10.2.2.0/24 added - nexthop: 10.23.32.1 - iface: eth0.2333 - VRF public-inet
 	root@chemdawg:~# netns-vrf ip route inet show public-inet
 	display vrf public-inet routing table:
@@ -84,5 +84,5 @@
 	10.23.32.0/30 dev eth0.2333  proto kernel  scope link  src 10.23.32.2 
 	
 	
-	root@chemdawg:~#
+	root@chemdawg:~#`
 

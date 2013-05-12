@@ -1,7 +1,7 @@
-netns-vrf - a linux netns wrapper
+#netns-vrf - a linux netns wrapper
 ---------------------------------
 
-#install
+##install
 
 * required: ruby, linux 3.0.2+
 
@@ -13,7 +13,7 @@ netns-vrf - a linux netns wrapper
 
 * run with: netns-vrf
 
-#howto
+##howto
 
 1. create a VRF:
 

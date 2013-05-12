@@ -17,20 +17,21 @@
 
 1. create a VRF:
 
-	`root@chemdawg:~# netns-vrf show all
-	root@chemdawg:~# netns-vrf create public-inet
-	+ vrf created: public-inet
-	root@chemdawg:~# netns-vrf show all
-	display vrf: public-inet
-	--------------------------
-	15: lo: <LOOPBACK,UP,LOWER_UP> mtu 16436 qdisc noqueue state UNKNOWN 
-    	link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
-    	inet 127.0.0.1/8 scope host lo
-    	inet6 ::1/128 scope host 
-       	   valid_lft forever preferred_lft forever
-	--------------------------
-	
-	root@chemdawg:~#`
+    root@chemdawg:~# netns-vrf show all
+    root@chemdawg:~# netns-vrf create public-inet
+    + vrf created: public-inet
+    root@chemdawg:~# netns-vrf show all
+    display vrf: public-inet
+    --------------------------
+    15: lo: <LOOPBACK,UP,LOWER_UP> mtu 16436 qdisc noqueue state UNKNOWN
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo 
+    inet6 ::1/128 scope host
+       valid_lft forever preferred_lft forever
+    --------------------------
+    
+    root@chemdawg:~#
+    
 
 2. add interface to VRF:
 

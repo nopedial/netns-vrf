@@ -4,14 +4,23 @@ netns-vrf
 a linux netns wrapper
 ---------------------
 
+###requirements
+
++ ruby
++ linux 3.0.2+
++ network name-spaces kernel support
++ gem
+
 ###install
 
-* required: ruby, linux 3.0.2+
+	shell> gem install netns-vrf
 
-* clone the repo with: git clone https://github.com/nopedial/netns-vrf
+###howto
 
-* build the gem with: gem build netns-vrf.gemspec
+	shell> netns-vrf help
 
-* install the gem with: gem install ./netns-vrf-0.0.2.gem
 
-* run with: netns-vrf
+
+
+
+
